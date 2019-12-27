@@ -13,30 +13,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Peter Ullrich Blog
-description: >- # this means to ignore newlines until "baseurl:"
-  Personal blog about software development, psychology and more
-baseurl: "/" # the subpath of your site, e.g. /blog
+title: Peter regt sich auf
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: pjullrich
-github_username: pjullrich
-
-# Build settings
-markdown: kramdown
-remote_theme: thelehhman/plainwhite-jekyll
-plugins:
-  - jekyll-feed
 
 plainwhite:
   name: Peter regt sich auf
-  tagline: Alles Schwachsinn hier
-  date_format: "%b %-d, %Y"
+  tagline: Alles Schwachsinn hier.
   show_excerpts: true
-
   analytics_id: "UA-154984953-1"
 
   social_links:
     twitter: pjullrich
+    github: pjullrich
+    linkedIn: in/pjullrich
+
+# Build settings
+markdown: kramdown
+theme: plainwhite
+plugins:
+  - jekyll-feed
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
