@@ -29,7 +29,7 @@ plainwhite:
 
 # Build settings
 markdown: kramdown
-theme: plainwhite
+remote_theme: thelehhman/plainwhite-jekyll
 plugins:
   - jekyll-feed
 # Exclude from processing.
