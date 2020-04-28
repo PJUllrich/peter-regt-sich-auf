@@ -2,28 +2,28 @@
 <html lang="en">
 
 <head>
-	{%- include head.html -%}
+  {%- include head.html -%}
 </head>
 
 <body>
-	<main class="container">
-		<section class="about">
-			<a href="/"><img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
+  <main class="container">
+    <section class="about">
+      <a href="/"><img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
 
-			<h2>{{ site.plainwhite.name }}</h2>
-			<p class="tagline">{{ site.plainwhite.tagline }}</p>
-			<ul class="social">
-				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}">
-					<li><i class="icon-twitter-squared"></i></li>
-				</a>
-			</ul>
-			<p>&copy; 2019</p>
-		</section>
-		<section class="content">
-			{{ content }}
-		</section>
-	</main>
-	{%- include cookie-consent.html %}
+      <h2>{{ site.plainwhite.name }}</h2>
+      <p class="tagline">{{ site.plainwhite.tagline }}</p>
+      <ul class="social">
+        <a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}">
+          <li><i class="icon-twitter-squared"></i></li>
+        </a>
+      </ul>
+      <p>&copy; {{ 'now' | date: "%Y" }}</p>
+    </section>
+    <section class="content">
+      {{ content }}
+    </section>
+  </main>
+  {%- include cookie-consent.html %}
 </body>
 
 </html>
